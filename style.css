@@ -1,0 +1,208 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header-logo {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+}
+li {
+  list-style-type: none;
+}
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+.header-logo img {
+  height: 30px;
+}
+.localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+  background: #e9e9e9;
+  width: 100%;
+  margin-top: -9px;
+}
+.localisation i {
+  margin-right: 19px;
+  font-size: 17px;
+}
+.localisation p {
+  margin-right: 20px;
+  padding-right: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+hr {
+  border-top: 3px solid #dcd9d9;
+}
+.call-to-action {
+  background-color: #f4f4f4;
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.call-to-action h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+}
+.call-to-action a {
+  text-decoration: none;
+  color: white;
+}
+.bouton {
+  height: 61px;
+  width: 55%;
+  border-radius: 71px;
+  border: hidden;
+  background: linear-gradient(#f780c9, #9356dc);
+  font-size: medium;
+  margin-top: 10px;
+}
+/*NAV*/
+nav{
+  margin-top: 40px;
+}
+nav img {
+  object-fit: cover;
+  height: 300px;
+}
+/*MAIN*/
+nav h2 {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+nav ul {
+  display: grid;
+  justify-items: start;
+  align-items: baseline;
+  justify-content: start;
+}
+.titre-bouton{
+  display: flex;
+  align-items: center;
+  justify-content:flex-start ;
+  width: 160%;
+  height: 69px;
+  background-color:rgb(244, 244, 244);
+  border-radius: 20px;
+  box-shadow: 1Px 1px 11px;
+  margin-top:20px;
+  margin-left:-22px;
+}
+.titre-bouton:hover{
+  background-color:rgb(237, 226, 237)
+}
+.number {
+  height: 22px;
+  width: 15px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: white;
+  padding-left: 6px;
+  padding-top: 5px;
+  font-size: 13px;
+  margin-left: -8px;
+}
+.grid {
+  grid-area: 2;
+}
+.logo-portable {
+  grid-area: 1/2/2/3;
+  margin-left: 21px;
+  color:gray
+}
+.choix-restaurant {
+  grid-area: 1/3/2/4;
+  margin-left: 30px;
+  font-weight: 600;
+}
+.logo-list {
+  margin-left: 20px;
+  grid-area: 2;
+  color:gray
+}
+.compo-menu {
+  margin-left: 30px;
+  grid-area: 2;
+  font-weight: 600;
+}
+.logo-store {
+  margin-left: 20px;
+  color:#9356dc
+}
+.degust-restaurant {
+  margin-left: 30px;
+  font-weight: 600;
+}
+.menilmontant{
+  background-image:url(images/restaurants/lapalette.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 180px;
+  width: 381px;
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.bite{
+  height: 247px;
+  background: red;
+  margin-left: -23px;
+  width: 381px;
+  border-radius: 25px;
+}
+button-restau{
+  margin: 27px 12px;
+  height: 30px;
+  width: 90px;
+  border-radius: 3px 3px;
+  color: #046d04;
+  background: #99E2D0;
+  border: none;
+}
+/*MAIN*/
+main{
+  background-color: aqua;
+  margin-top: 50px;
+}
+main h2 {
+  margin-left: 20px;
+  padding-top: 40px;
+}
+main img {
+  object-fit: cover;
+  height: 241px;
+  width: 370px;
+  border-radius: 20px 20px 0 0;
+}
+/*
+.menilmontant {
+  background: #3e88ca;
+  height: 309px;
+  width: 99%;
+  margin-left: -18px;
+  border-radius: 20px 20px 20px 20px;
+}*/
+.icone {
+  display: flex;
+  justify-content: flex-end;
+}
+/*FOOTER*/
+footer {
+  background-color: black;
+  color: white;
+  height: 100%;
+  padding-bottom: 20px;
+  line-height: 2;
+}
+footer li {
+  list-style-type: none;
+}
+/*# sourceMappingURL=style.css.map */
