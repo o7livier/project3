@@ -109,7 +109,7 @@ hr {
     font-weight:normal;
   }
   .titre-palette i{
-    margin-right:20px;
+    margin-right:45px;
     font-size: 30px;
     font-weight: 200;
   }
@@ -135,20 +135,24 @@ hr {
     color:white;
     font-size:17px;
   }
-.entrees-palette{
+.border{
     display:grid;
     margin-left: 11px;
     background-color: white;
-    BORDER-radius: 20px 20px;
+    border-radius: 20px 20px;
     margin-right: 10px;
     box-shadow:-1px 0px 3px #dbd4d4;
   }
-  .ingredient-palette{
+  .ingredient{
     grid-area: 2/1/2/2;
     margin-left: -28px;
     margin-top: 4px;
   }
-  .prix-entrees-palette1{
+  .ingredient-truffes ,.ingredient-legumes{
+    grid-area: 2;
+    margin-left: -29px;
+  }
+  .border-prix{
     grid-area:2/3;
     margin-left: 50px;
     margin-bottom: 14px;
@@ -160,14 +164,17 @@ hr {
   .prix3{
     margin-right:19px;
   }
-  .escargot{
+  .principal{
     font-weight: 600;
     font-size:17px;
     margin-left: -29px;
     margin-top: 9px;
   }
   .prix-filetdeboeuf{
-    margin-right:26px ;
+    margin-right:16px ;
+    grid-area: 2/3;
+    margin-bottom: 14px;
+    font-weight: 600;
   }
   .prix-parmentier{
     margin-right:20px;
@@ -184,6 +191,24 @@ hr {
   .prix-mousse{
     margin-left:7px;
   }
+  .prix-veloute,.prix-petale{
+    margin-right:10px;
+  }
+  .prix-soupe{
+    margin-right:-29px;
+  }
+.prix-coquille{
+  margin-right:22px
+}
+.prix-pigeonneau{
+  margin-right: 28px;
+}
+.prix-fondant{
+  margin-right:-21px;
+}
+.prix-millefeuille{
+  margin-right:-4px;
+}
   .bouton-commander{
     height: 61px;
     width: 50%;
@@ -197,7 +222,7 @@ hr {
     display: flex;
     justify-content: center;
   }
-   /*restaurant charonne*/
+ /*restaurant charonne*/
   .image-charonne{
     height: 190px;
     width: 413px;
@@ -217,6 +242,42 @@ hr {
 .main-menilmontant{
   border-radius: 45px 45px 0 0;
   padding-bottom: 50px;
+}
+.prix-raviole{
+  margin-right:23px;
+}
+.prix-caviar{
+  margin-right:-9px;
+}
+.prix-homar{
+  margin-right:1px;
+}
+.prix-foie{
+  margin-right:9px;
+}
+.prix-noix{
+  margin-right:10px;
+}
+.prix-langouste{
+  margin-right:-36px;
+}
+.prix-mijote{
+  margin-right:5px;
+}
+.prix-baba{
+  margin-right:-32px ;
+}
+.prix-macaronnoisette{
+  grid-area: 2/3;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+.prix-tarte{
+  margin-right:-14px;
+}
+.glace{
+  grid-area: 2/1;
+  margin-left: -31px;
 }
 /*NAV*/
 nav{
