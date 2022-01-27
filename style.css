@@ -209,6 +209,30 @@ hr {
 .prix-millefeuille{
   margin-right:-4px;
 }
+.prix-tartare{
+  margin-left:177px;
+}
+.prix-bouchee{
+  margin-left:72px;
+}
+.prix-cepe{
+  margin-left:185px;
+}
+.prix-langousterotie{
+  margin-left:141px;
+}
+.prix-cote{
+  margin-left:161px;
+}
+.prix-farandole{
+  margin-left:153px;
+}
+.prix-creme{
+  margin-left:221px
+}
+.prix-tiramisu{
+  margin-left:239px
+}
   .bouton-commander{
     height: 61px;
     width: 50%;
@@ -474,8 +498,23 @@ footer {
   height: 100%;
   padding-bottom: 20px;
   line-height: 2;
+  margin-top:-14px;
+}
+.footer{
+  margin-top:50px;
+  margin-bottom:0;
 }
 footer li {
   list-style-type: none;
+}
+.title-footer{
+  color: white;
+  font-size: 21px;
+  margin-left: 41px;
+  padding-top: 20px;
+}
+.email{
+  color:white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
