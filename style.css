@@ -1,8 +1,58 @@
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   box-sizing: border-box;
+}
+/*LOADER*/
+
+
+.loader{
+  display:grid;
+  place-items: center;
+ position: fixed;
+ z-index: 0;
+ inset:0 ;
+  background-color: rgb(243, 243, 243);
+  opacity:0.9;
+  height: 100vh;
+  animation: disappear 2s  1s;
+  animation-duration:5S linear;
+ animation-delay: 1s;
+
+  animation-fill-mode: forwards;
+  transform-origin: center;
+  }
+.cercle {
+  font-size:20px;
+  height: 100px;
+  width:100px;
+  border-right:5px solid transparent;
+  border-left:5px solid #9356dc;
+  border-top:5px solid #9356dc;
+  border-radius: 50%;
+  animation: spin 1s infinite ease-in-out;
+  
+ 
+ 
+
+ }
+
+
+@keyframes disappear {
+  0% { 
+    transform: scale(1);
+   }
+   100% { 
+     transform:scale(0);
+     }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
 }
 
 .header-logo {
@@ -10,15 +60,19 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
+
 li {
   list-style-type: none;
 }
+
 h1 {
   font-family: 'Shrikhand', cursive;
 }
+
 .header-logo img {
   height: 30px;
 }
+
 .localisation {
   display: flex;
   align-items: center;
@@ -28,33 +82,40 @@ h1 {
   width: 100%;
   margin-top: -9px;
 }
+
 .localisation i {
   margin-right: 19px;
   font-size: 17px;
 }
+
 .localisation p {
   margin-right: 20px;
   padding-right: 20px;
   font-weight: 600;
   font-size: 16px;
 }
+
 hr {
   border-top: 3px solid #dcd9d9;
 }
+
 .call-to-action {
   background-color: #f4f4f4;
   padding-top: 30px;
   text-align: center;
   padding-bottom: 50px;
 }
+
 .call-to-action h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 23px;
 }
+
 .call-to-action a {
   text-decoration: none;
   color: white;
 }
+
 .bouton {
   height: 61px;
   width: 55%;
@@ -64,288 +125,361 @@ hr {
   font-size: medium;
   margin-top: 10px;
 }
-.bouton:hover{
-  transform: scale(1.03);
+
+.bouton:hover {
+  transform: scale(1.30);
   opacity: 0.9;
 }
+
 /* PAGE MENU MENILMONTANT*/
-.header-logo-accueil{
+.header-logo-accueil {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.header-logo-accueil img{
-  height:30px;
-  margin-left:70px;
+
+.header-logo-accueil img {
+  height: 30px;
+  margin-left: 70px;
   font-size: 20px;
   color: #575555;
   padding-top: 20px;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: bottom;
 }
-.header-logo-accueil i{
+
+.header-logo-accueil i {
   margin-left: 21px;
   margin-top: 25px;
 }
-.header-logo-accueil a{
+
+.header-logo-accueil a {
   color: #424141;
   font-size: 25px;
 }
-.trait{
+
+.trait {
   width: 9%;
   margin-left: 22px;
   margin-top: -9px;
   border-bottom: 3px solid #99E2D0;
   border-top: hidden;
-  }
-  .titre-palette{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top:-108px;
-    padding-top:30px;
-  }
-  .titre-palette h1{
-    margin-left: 20px;
-    font-weight:normal;
-  }
-  .titre-palette i{
-    margin-right:45px;
-    font-size: 30px;
-    font-weight: 200;
-  }
-  .image-palette{
-    background-position: center;
-    background-image: url(images/restaurants/lapalette.jpg);
-    height: 302px;
-    width: 415px;
-    background-size: cover;
-  }
-  .main-menilmontant h2{
-    margin-left: 20px;
-    font-weight: lighter;
-    font-size: 18px;
-    padding-top:0;
-    margin-top:40px;
-  }
-  .main-menilmontant{
-    border-radius:45px 45px 0 0;
-  }
-  .commander a{
-    text-decoration:none;
-    color:white;
-    font-size:17px;
-  }
-.border{
-    display:grid;
-    margin-left: 11px;
-    background-color: white;
-    border-radius: 20px 20px;
-    margin-right: 10px;
-    box-shadow:-1px 0px 3px #dbd4d4;
-  }
-  .ingredient{
-    grid-area: 2/1/2/2;
-    margin-left: -28px;
-    margin-top: 4px;
-  }
-  .ingredient-truffes ,.ingredient-legumes{
-    grid-area: 2;
-    margin-left: -29px;
-  }
-  .border-prix{
-    grid-area:2/3;
-    margin-left: 50px;
-    margin-bottom: 14px;
-    font-weight: 600;
-  }
-  .prix1{
-    margin-left:109px ;
-  }
-  .prix3{
-    margin-right:19px;
-  }
-  .principal{
-    font-weight: 600;
-    font-size:17px;
-    margin-left: -29px;
-    margin-top: 9px;
-  }
-  .prix-filetdeboeuf{
-    margin-right:16px ;
-    grid-area: 2/3;
-    margin-bottom: 14px;
-    font-weight: 600;
-  }
-  .prix-parmentier{
-    margin-right:20px;
-  }
-  .prix-filetturbot{
-    margin-right: -59px;
-  }
-  .prix-parisbrest{
-    margin-left: 190px;
-  }
-  .prix-macaron{
-    margin-left:26px;
-  }
-  .prix-mousse{
-    margin-left:7px;
-  }
-  .prix-veloute,.prix-petale{
-    margin-right:10px;
-  }
-  .prix-soupe{
-    margin-right:-29px;
-  }
-.prix-coquille{
-  margin-right:22px
 }
-.prix-pigeonneau{
-  margin-right: 28px;
-}
-.prix-fondant{
-  margin-right:-21px;
-}
-.prix-millefeuille{
-  margin-right:-4px;
-}
-.prix-tartare{
-  margin-left:177px;
-}
-.prix-bouchee{
-  margin-left:72px;
-}
-.prix-cepe{
-  margin-left:185px;
-}
-.prix-langousterotie{
-  margin-left:141px;
-}
-.prix-cote{
-  margin-left:161px;
-}
-.prix-farandole{
-  margin-left:153px;
-}
-.prix-creme{
-  margin-left:221px
-}
-.prix-tiramisu{
-  margin-left:239px
-}
-  .bouton-commander{
-    height: 61px;
-    width: 50%;
-    border-radius: 71px;
-    border: hidden;
-    background: linear-gradient(#f780c9, #9356dc);
-    font-size: medium;
-    margin-top: 10px;
-    margin-left: 91px;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-  }
- /*restaurant charonne*/
-  .image-charonne{
-    height: 190px;
-    width: 413px;
-  }
-.title{
+
+.titre-palette {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-top:-44px;
+  justify-content: space-between;
+  margin-top: -108px;
+  padding-top: 30px;
 }
-.entree{
-  font-weight: 100;
+
+.titre-palette h1 {
   margin-left: 20px;
-    font-size: 16px;
-    padding-top:0;
+  font-weight: normal;
 }
-.main-menilmontant{
+
+.titre-palette i {
+  margin-right: 45px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.image-palette {
+  background-position: center;
+  background-image: url(images/restaurants/lapalette.jpg);
+  height: 302px;
+  width: 415px;
+  background-size: cover;
+}
+
+.main-menilmontant h2 {
+  margin-left: 20px;
+  font-weight: lighter;
+  font-size: 18px;
+  padding-top: 0;
+  margin-top: 40px;
+}
+
+.main-menilmontant {
   border-radius: 45px 45px 0 0;
-  padding-bottom: 50px;
 }
-.prix-raviole{
-  margin-right:23px;
+
+.commander a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
 }
-.prix-caviar{
-  margin-right:-9px;
+
+.border {
+  display: grid;
+  margin-left: 11px;
+  background-color: white;
+  border-radius: 20px 20px;
+  margin-right: 10px;
+  box-shadow: -1px 0px 3px #dbd4d4;
 }
-.prix-homar{
-  margin-right:1px;
+
+.ingredient {
+  grid-area: 2/1/2/2;
+  margin-left: -28px;
+  margin-top: 4px;
 }
-.prix-foie{
-  margin-right:9px;
+
+.ingredient-truffes,
+.ingredient-legumes {
+  grid-area: 2;
+  margin-left: -29px;
 }
-.prix-noix{
-  margin-right:10px;
+
+.border-prix {
+  grid-area: 2/3;
+  margin-left: 50px;
+  margin-bottom: 14px;
+  font-weight: 600;
 }
-.prix-langouste{
-  margin-right:-36px;
+
+.prix1 {
+  margin-left: 109px;
 }
-.prix-mijote{
-  margin-right:5px;
+
+.prix3 {
+  margin-right: 19px;
 }
-.prix-baba{
-  margin-right:-32px ;
+
+.principal {
+  font-weight: 600;
+  font-size: 17px;
+  margin-left: -29px;
+  margin-top: 9px;
 }
-.prix-macaronnoisette{
+
+.prix-filetdeboeuf {
+  margin-right: 16px;
   grid-area: 2/3;
   margin-bottom: 14px;
   font-weight: 600;
 }
-.prix-tarte{
-  margin-right:-14px;
+
+.prix-parmentier {
+  margin-right: 20px;
 }
-.glace{
+
+.prix-filetturbot {
+  margin-right: -59px;
+}
+
+.prix-parisbrest {
+  margin-left: 190px;
+}
+
+.prix-macaron {
+  margin-left: 26px;
+}
+
+.prix-mousse {
+  margin-left: 7px;
+}
+
+.prix-veloute,
+.prix-petale {
+  margin-right: 10px;
+}
+
+.prix-soupe {
+  margin-right: -29px;
+}
+
+.prix-coquille {
+  margin-right: 22px
+}
+
+.prix-pigeonneau {
+  margin-right: 28px;
+}
+
+.prix-fondant {
+  margin-right: -21px;
+}
+
+.prix-millefeuille {
+  margin-right: -4px;
+}
+
+.prix-tartare {
+  margin-left: 177px;
+}
+
+.prix-bouchee {
+  margin-left: 72px;
+}
+
+.prix-cepe {
+  margin-left: 185px;
+}
+
+.prix-langousterotie {
+  margin-left: 141px;
+}
+
+.prix-cote {
+  margin-left: 161px;
+}
+
+.prix-farandole {
+  margin-left: 153px;
+}
+
+.prix-creme {
+  margin-left: 221px
+}
+
+.prix-tiramisu {
+  margin-left: 239px
+}
+
+.bouton-commander {
+  height: 61px;
+  width: 50%;
+  border-radius: 71px;
+  border: hidden;
+  background: linear-gradient(#f780c9, #9356dc);
+  font-size: medium;
+  margin-top: 10px;
+  margin-left: 91px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/*restaurant charonne*/
+.image-charonne {
+  height: 190px;
+  width: 413px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -44px;
+}
+
+.entree {
+  font-weight: 100;
+  margin-left: 20px;
+  font-size: 16px;
+  padding-top: 0;
+}
+
+.main-menilmontant {
+  border-radius: 45px 45px 0 0;
+  padding-bottom: 50px;
+}
+
+.prix-raviole {
+  margin-right: 23px;
+}
+
+.prix-caviar {
+  margin-right: -9px;
+}
+
+.prix-homar {
+  margin-right: 1px;
+}
+
+.prix-foie {
+  margin-right: 9px;
+}
+
+.prix-noix {
+  margin-right: 10px;
+}
+
+.prix-langouste {
+  margin-right: -36px;
+}
+
+.prix-mijote {
+  margin-right: 5px;
+}
+
+.prix-baba {
+  margin-right: -32px;
+}
+
+.prix-macaronnoisette {
+  grid-area: 2/3;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.prix-tarte {
+  margin-right: -14px;
+}
+
+.glace {
   grid-area: 2/1;
   margin-left: -31px;
 }
+
 /*NAV*/
-nav{
+nav {
   margin-top: 20px;
 }
+
 nav img {
   object-fit: cover;
   height: 300px;
 }
+
 nav h2 {
   margin-left: 20px;
   margin-bottom: 30px;
 }
+
 nav ul {
   display: grid;
   justify-items: start;
   align-items: baseline;
   justify-content: start;
 }
+
 /*MAIN*/
-.icone{
+.icone {
   display: flex;
   justify-content: flex-end;
   margin-right: 25px;
   margin-top: -30px;
   font-size: 24px;
+  
+  
 }
-.titre-bouton{
+
+.far:hover{
+  transition:color;
+ background-color:red;
+
+}
+.titre-bouton {
   display: flex;
   align-items: center;
-  justify-content:flex-start ;
+  justify-content: flex-start;
   width: 160%;
   height: 69px;
-  background-color:rgb(244, 244, 244);
+  background-color: rgb(244, 244, 244);
   border-radius: 20px;
   box-shadow: 1Px 1px 11px;
-  margin-top:20px;
-  margin-left:-22px;
+  margin-top: 20px;
+  margin-left: -22px;
 }
-.titre-bouton:hover{
-  background-color:rgb(237, 226, 237)
+
+.titre-bouton:hover {
+  background-color: rgb(237, 226, 237)
 }
+
 .number {
   height: 22px;
   width: 15px;
@@ -357,41 +491,49 @@ nav ul {
   font-size: 13px;
   margin-left: -8px;
 }
+
 .grid {
   grid-area: 2;
 }
+
 .logo-portable {
   grid-area: 1/2/2/3;
   margin-left: 21px;
-  color:gray
+  color: gray
 }
+
 .choix-restaurant {
   grid-area: 1/3/2/4;
   margin-left: 30px;
   font-weight: 600;
 }
+
 .logo-list {
   margin-left: 20px;
   grid-area: 2;
-  color:gray
+  color: gray
 }
+
 .compo-menu {
   margin-left: 30px;
   grid-area: 2;
   font-weight: 600;
 }
+
 .logo-store {
   margin-left: 20px;
-  color:#9356dc
+  color: #9356dc
 }
+
 .degust-restaurant {
   margin-left: 30px;
   font-weight: 600;
 }
-.menilmontant{
-  background-image:url(images/restaurants/lapalette.jpg);
+
+.menilmontant {
+  background-image: url(images/restaurants/lapalette.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: bottom;
   height: 180px;
   width: 381px;
@@ -402,25 +544,29 @@ nav ul {
   flex-wrap: wrap;
   align-items: flex-end;
 }
-.menilmontant-lien{
-  margin-left:10px;
+
+.menilmontant-lien {
+  margin-left: 10px;
 }
-.menilmontant-lien a{
+
+.menilmontant-lien a {
   text-decoration: none;
   font-size: 18px;
   color: black;
 }
-.titre-restau{
+
+.titre-restau {
   font-size: 19px;
   font-weight: 600;
   margin-top: 10px;
   margin-left: 10px;
 }
-.charonne{
-  background-image:url(images/restaurants/lanote.jpg);
+
+.charonne {
+  background-image: url(images/restaurants/lanote.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
-  background-position:left;
+  background-size: cover;
+  background-position: left;
   height: 180px;
   width: 381px;
   border-radius: 25px 25px 0 0;
@@ -430,10 +576,11 @@ nav ul {
   flex-wrap: wrap;
   align-items: flex-end;
 }
-.citerouge{
-  background-image:url(images/restaurants/francaise.jpg);
+
+.citerouge {
+  background-image: url(images/restaurants/francaise.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: bottom;
   height: 180px;
   width: 381px;
@@ -444,10 +591,11 @@ nav ul {
   flex-wrap: wrap;
   align-items: flex-end;
 }
-.folie-mericourt{
-  background-image:url(images/restaurants/ledelice.jpg);
+
+.folie-mericourt {
+  background-image: url(images/restaurants/ledelice.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: bottom;
   height: 180px;
   width: 381px;
@@ -458,16 +606,18 @@ nav ul {
   flex-wrap: wrap;
   align-items: flex-end;
 }
-.cadre-restau{
+
+.cadre-restau {
   height: 250px;
   background: white;
   margin-left: -23px;
   width: 381px;
   border-radius: 25px;
-  box-shadow:1px 1px 11px;
-  margin-top:35px;
+  box-shadow: 1px 1px 11px;
+  margin-top: 35px;
 }
-.bouton-restau{
+
+.bouton-restau {
   margin-right: 19px;
   margin-top: 20px;
   font-size: 14px;
@@ -477,22 +627,26 @@ nav ul {
   height: 30px;
   color: green;
   background-color: #99E2D0;
-  border:none;
+  border: none;
 }
-main{
+
+main {
   background-color: #f2f0f0;
   margin-top: 50px;
 }
+
 main h2 {
   margin-left: 20px;
   padding-top: 40px;
 }
+
 main img {
   object-fit: cover;
   height: 241px;
   width: 370px;
   border-radius: 20px 20px 0 0;
 }
+
 /*FOOTER*/
 footer {
   background-color: black;
@@ -500,22 +654,26 @@ footer {
   height: 100%;
   padding-bottom: 20px;
   line-height: 2;
-  margin-top:-14px;
+  margin-top: -14px;
 }
-.footer{
-  margin-top:50px;
-  margin-bottom:0;
+
+.footer {
+  margin-top: 50px;
+  margin-bottom: 0;
 }
+
 footer li {
   list-style-type: none;
 }
-.title-footer{
+
+.title-footer {
   color: white;
   font-size: 21px;
   margin-left: 41px;
   padding-top: 20px;
 }
-.email{
-  color:white;
+
+.email {
+  color: white;
   text-decoration: none;
 }
