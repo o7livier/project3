@@ -220,10 +220,11 @@ hr {
   height: 62px;
 }
 .btn .fas{
-  color: mediumaquamarine;
+  color: rgb(247, 247, 247);
 }
 .border:hover .btn .fas { 
-  animation:rotation 2s linear;
+  animation:rotation 1s linear;
+
 }
 @keyframes rotation {
   100%{
@@ -231,21 +232,17 @@ hr {
   -webkit-transform: rotate(360deg);
 }
 }
-.border-prix {
-  grid-area: 2/3;
-  margin-left: 50px;
-  margin-bottom: 14px;
-  font-weight: 600;
-}
+
 .info-plat{
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width:70%;
+ 
 }
 .btn{
-  width: 0%;
+  width: 0px;
   height: 86%;
-  border: solid black;
+  border: solid transparent;
   border-radius: 0 20px 20px 0;
   display: flex;
   justify-content: center;
@@ -256,7 +253,8 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation:afficheBtn 3s linear;
+  animation:afficheBtn 0.5s forwards;
+  background-color:#99E2D0;
 }
 @keyframes afficheBtn{
   10%{
@@ -265,28 +263,31 @@ hr {
   50%{
     width:30px;
   }
+  70%{
+    width:40px;
+  }
   100%{
     width:50px;
   }
 }
-
 .prix{
-  width:40%
-}
-.prix1 {
-  margin-left: 109px;
-}
-
-.prix3 {
-  margin-right: 19px;
+  width:10%;
+  font-weight: 600;
 }
 
 .principal {
   font-weight: 600;
   font-size: 17px;
   margin-top: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
 }
-
+.ingredient{
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
 .prix-filetdeboeuf {
   margin-right: 16px;
   margin-bottom: 14px;
