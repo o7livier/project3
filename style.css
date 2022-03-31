@@ -127,7 +127,10 @@ hr {
   transform: scale(1.30);
   opacity: 0.9;
 }
-
+.titre-restau a{
+  text-decoration: none;
+  color:black
+}
 /* PAGE MENU MENILMONTANT*/
 .header-logo-accueil {
   display: flex;
@@ -178,7 +181,7 @@ hr {
 }
 
 .titre-palette i {
-  margin-right: 45px;
+  margin-right: -3px;
   font-size: 30px;
   font-weight: 200;
 }
@@ -218,6 +221,7 @@ hr {
   margin-right: 10px;
   box-shadow: -1px 0px 3px #dbd4d4;
   height: 62px;
+  margin-top:20px;
 }
 .btn .fas{
   color: rgb(247, 247, 247);
@@ -237,6 +241,8 @@ hr {
   display: flex;
   flex-direction: column;
   width:70%;
+  margin-left:10px;
+
  
 }
 .btn{
@@ -273,6 +279,8 @@ hr {
 .prix{
   width:10%;
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
 .principal {
@@ -384,6 +392,10 @@ hr {
   display: flex;
   justify-content: center;
 }
+.icone-menilmontant{
+  display: flex;
+  font-size: 24px; 
+}
 
 /*restaurant charonne*/
 .image-charonne {
@@ -483,18 +495,45 @@ nav ul {
 .icone {
   display: flex;
   justify-content: flex-end;
+ align-items: center;
   margin-right: 25px;
   margin-top: -30px;
   font-size: 24px;
-  
-  
+   
+}
+.icone i{
+  position: absolute;
+  transition:all 0.2s ease-in-out;
 }
 
-.far:hover{
-  transition:color;
- background-color:red;
+.coeur-creux{
+  z-index:0;
+  opacity: 1;
+  
+}
+.coeur-creux:hover{
+ opacity:0;
+ z-index: 3;
+ color:transparent
 
 }
+.coeur-plein{
+  opacity:0;
+  z-index: 3;
+}
+.coeur-plein:hover{
+  opacity:1;
+  background-image:linear-gradient(45deg,#f780c9, #9356dc);
+	background: -moz-linear-gradient(45deg,#f780c9, #9356dc);
+	-webkit-background-clip: text;
+	color: transparent;
+  background-clip: clip;
+  transition:all 500ms ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+
+}
+
 .titre-bouton {
   display: flex;
   align-items: center;
@@ -524,14 +563,13 @@ nav ul {
   margin-left: -8px;
 }
 
-.grid {
-  grid-area: 2;
-}
 
 .logo-portable {
   grid-area: 1/2/2/3;
   margin-left: 21px;
-  color: gray
+  color: gray;
+  cursor: pointer;
+
 }
 
 .choix-restaurant {
@@ -543,7 +581,9 @@ nav ul {
 .logo-list {
   margin-left: 20px;
   grid-area: 2;
-  color: gray
+  color: gray;
+  cursor: pointer;
+
 }
 
 .compo-menu {
@@ -554,9 +594,13 @@ nav ul {
 
 .logo-store {
   margin-left: 20px;
-  color: #9356dc
+  color: gray;
+  cursor: pointer;
+   
 }
-
+.logo-icone:hover{
+  color:#9356dc;
+}
 .degust-restaurant {
   margin-left: 30px;
   font-weight: 600;
@@ -575,6 +619,7 @@ nav ul {
   align-content: stretch;
   flex-wrap: wrap;
   align-items: flex-end;
+ 
 }
 
 .menilmontant-lien {
@@ -647,8 +692,11 @@ nav ul {
   border-radius: 25px;
   box-shadow: 1px 1px 11px;
   margin-top: 35px;
+  text-decoration: none;
 }
-
+.cadre-restau a{
+  text-decoration: none;
+}
 .bouton-restau {
   margin-right: 19px;
   margin-top: 20px;
@@ -660,6 +708,7 @@ nav ul {
   color: green;
   background-color: #99E2D0;
   border: none;
+  
 }
 
 main {
