@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Menu A la française</title>
         <!-- Stylesheets -->
-        <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
         <!-- Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,82 +17,157 @@
         <header>
             <div class="header-logo-accueil">
              <a href="index.html"><i class="fas fa-arrow-left"></a></i>
-             <img src="images/logo/ohmyfood.png" alt="photo logo ohmyfood">
+            <img src="images/logo/ohmyfood.png" alt="photo logo ohmyfood">
             </div>
         </header>
         <nav>
-            <div class="image-palette" style="background-image:url('images/restaurants/ledelice.jpg');">
+            <div class="image-foliemericourt">
             </div>
         </nav>
         <main class="main-menilmontant">
-          <div class="titre-palette">
+         <div class="titre-palette">
             <h1>Le délice des sens</h1>
-            <i class="far fa-heart"></i>
-          </div>
+            <li class="icone-detail-menu icone-menilmontant"> 
+                <i class="fa fa-heart coeur-creux"></i>
+                <i class="fa fa-heart coeur-plein"></i>
+              </li>
+           </div>
             <h2>ENTRÈES</h2>
                 <hr class="trait">
-            <ul class="border">
-                <li class="principal">Tartare de thon</li>
-                <li class="ingredient">Assaisonné au yuzu</li>
-                <li class="border-prix prix-tartare">25€</li>
-            </ul>
-            <ul class="border">
-                <li class="principal">Bouchée de homard croustillant</li>
-                <li class="ingredient">Et sa farandole de petits légumes</li>
-                <li class="border-prix prix-bouchee">35€</li>
-            </ul>
-            <ul class="border">
-                <li class="principal">Velouté de cèpes </li>
-                <li class="ingredient">Aux truffes</li>
-                <li class="border-prix prix-cepe">20€</li>
-            </ul>
+            <div class="border">
+                <div class="info-plat">
+                    <span class="principal">Tartare de thon</span>
+                    <span class="ingredient">Assaisonné</span>
+                </div>
+                <div class="prix">
+                    <span class="border-prix ">25€</span>
+                </div>
+            
+                 <div class="btn">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+            
+            <div class="border">
+                <div class="info-plat">
+                    <span class="principal">Bouchée de homard croustillant</span>
+                    <span class="ingredient">Et sa farandole de petis légumes</span>
+               </div> 
+               <div class="prix">
+                    <span class="border-prix">35€</span>
+                </div>
+                <div class="btn">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+            <div class="border">
+            <div class="info-plat">
+                <span class="principal">Velouté de cépes</span>
+                <span class="ingredient">Aux truffes</span>
+           </div> 
+           <div class="prix">
+                <span class="border-prix">20€</span>
+            </div>
+            <div class="btn">
+                <i class="fas fa-check-circle"></i>
+            </div>
+        </div>
+             
             <h2>PLATS</h2>
                 <hr class="trait">
-            <ul class="border">
-                <li class="principal">Poulet rôti aux herbes de Provence </li>
-                <li class="ingredient">Et sa crème de truffe</li>
-                <li class="border-prix">40€</li>
-            </ul>
-            <ul class="border">
-                <li class="principal">Langouste rôtie </li>
-                <li class="ingredient">Et ses légumes de saison</li>
-                <li class="border-prix prix-langousterotie">35€</li>
-            </ul>
-            <ul class="border">
-                <li class="principal">Côte de boeuf Angus</li>
-                <li class="ingredient">Et sa purée de panais</li>
-                <li class="border-prix prix-cote">44€</li>
-            </ul>
+                <div class="border">
+                    <div class="info-plat">
+                        <span class="principal">Poulet rôtie aux herbes de provence</span>
+                        <span class="ingredient">Et sa créme de truffe</span>
+                   </div> 
+                   <div class="prix">
+                        <span class="border-prix">40€</span>
+                    </div>
+                    <div class="btn">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="info-plat">
+                        <span class="principal">Langouste rôtie</span>
+                        <span class="ingredient">Et ses légumes de saison</span>
+                   </div> 
+                   <div class="prix">
+                        <span class="border-prix">35€</span>
+                    </div>
+                    <div class="btn">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                
+                <div class="border">
+                    <div class="info-plat">
+                        <span class="principal">Côte de boeuf angus</span>
+                        <span class="ingredient">Et sa purée de panais </span>
+                   </div> 
+                   <div class="prix">
+                        <span class="border-prix">44€</span>
+                    </div>
+                    <div class="btn">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                
             <h2>DESSERTS</h2>
                 <hr class="trait">
-            <ul class="border">
-                <li class="principal">Farandole de desserts</li>
-                <li class="ingredient">Du chef</li>
-                <li class="border-prix prix-farandole">18€</li>
-            </ul>
-            <ul class="border">
-                <li class="principal">Crème brulée </li>
-                <li class="ingredient">Revisitée</li>
-                <li class="border-prix prix-creme">22€</li>
-            </ul>
-            <ul class="border">
-                <li class="principal">Tiramisu </li>
-                <li class="ingredient">À la noisette</li>
-                <li class="border-prix prix-tiramisu">23€ </li>
-            </ul>
+                <div class="border">
+                    <div class="info-plat">
+                        <span class="principal">Farandole de DESSERTS</span>
+                        <span class="ingredient">Du chef </span>
+                   </div> 
+                   <div class="prix">
+                        <span class="border-prix">18€</span>
+                    </div>
+                    <div class="btn">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="info-plat">
+                        <span class="principal">Créme brulée</span>
+                        <span class="ingredient">Revisitée </span>
+                   </div> 
+                   <div class="prix">
+                        <span class="border-prix">22€</span>
+                    </div>
+                    <div class="btn">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="info-plat">
+                        <span class="principal">Tiramisu</span>
+                        <span class="ingredient">À la noisette </span>
+                   </div> 
+                   <div class="prix">
+                        <span class="border-prix">23€</span>
+                    </div>
+                    <div class="btn">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+        
+    
             <div class="commander">
-                <span class="bouton-commander">
+                <span class="bouton-commander" >
                 <p><a href="#">Commander</a></p></span>
             </div>
-        </main>
-            <footer>
-                    <h1 class="title-footer">ohmyfood</h1>
-                <ul> 
-                    <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
-                    <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-                    <li>Mentions légales</li>
-                    <li>Contact</li>
+
+            <footer class="footer">
+                <h1 class="title-footer">ohmyfood</h1>
+                <ul>
+                  <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
+                  <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                  <li>Mentions légales</li>
+                  <li> <a class="email" href="mailto:adresse@serveur.com">Contact </a></li>
                 </ul>
             </footer>
+        </main>
+        
     </body>
 </html>

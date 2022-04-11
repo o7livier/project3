@@ -1,133 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma maquette OH MY FOOD</title>
+    <!-- Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,900;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ma maquette OH MY FOOD</title>
-  <!-- Stylesheets -->
-  <link type="text/css" rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-  <!-- Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,900;1,400;1,900&display=swap"
-    rel="stylesheet">
-</head>
+  <body>
+    <div class="loader">
+      <span class="cercle"></span>
+    </div>
+    <header>
+      <div class="header-logo">
+        <img src="images/logo/ohmyfood.png" alt="photo logo ohmyfood" />
+      </div>
+      <hr />
+      <div class="localisation">
+        <i class="fas fa-map-marker-alt"></i>
 
-<body>
-  <div class="loader">
- <span class="cercle"></span>
-   
-    
-  </div>
-  <header>
-    <div class="header-logo">
-      <img src="images/logo/ohmyfood.png" alt="photo logo ohmyfood">
+        <input type="text" placeholder="Paris, Belleville" />
+      </div>
+    </header>
+    <div class="call-to-action">
+      <h1>Réservez le menu qui <br />vous convient</h1>
+      <p>
+        Découvrez des restaurants d'exception, <br />
+        séléctionnés par nos soins.
+      </p>
+      <button class="bouton" type="button">
+        <a href="#restaurant">Explorer nos restaurants</a>
+      </button>
     </div>
-    <hr>
-    <div class="localisation">
-      <i class="fas fa-map-marker-alt "></i>
-      <p>Paris,Belleville</p>
-    </div>
-  </header>
-  <div class="call-to-action">
-    <h1>Réservez le menu qui <br>vous convient</h1>
-    <p>Découvrez des restaurants d'exception, <br> séléctionnés par nos soins.</p>
-    <button class="bouton" type="button"> <a href="#restaurant">Explorer nos restaurants</a></button>
-  </div>
-  <nav>
-    <h2> Fonctionnement</h2>
-    <ul>
-      <div class="titre-bouton">
-        <li class="number">1</li>
-        <li class="logo-portable"><i class="fas fa-mobile-alt logo-icone"></i></li>
-        <li class="choix-restaurant">
-          <p>Choississez un restaurant</p>
-        </li>
-      </div>
-      <div class="titre-bouton">
-        <li class="number grid">2</li>
-        <li class="logo-list"><i class="fas fa-list logo-icone"></i></li>
-        <li class="compo-menu">
-          <p> Composez votre menu</p>
-        </li>
-      </div>
-      <div class="titre-bouton">
-        <li class="number">3</li>
-        <li class="logo-store"><i class="fas fa-store logo-icone"></i></li>
-        <li class="degust-restaurant">
-          <p> Dégustez au restaurant</p>
-        </li>
-      </div>
-    </ul>
-  </nav>
-  <main class="main">
-    <h2 id="restaurant">Restaurants</h2>
-    <ul>
-      <div class="cadre-restau">
-        <a href="menu-menilmontant.html"> <li class="menilmontant">
-          <button class="bouton-restau"> Nouveau</button>
-        </li></a>
-        <li class="titre-restau"><a href="menu-menilmontant.html">La palette du goût</a></li>
-        <li class="menilmontant-lien"><a href="menu-menilmontant.html">Menilmontant</a></li>
-        <li class="icone"> 
-          <i class="far fa-heart coeur-creux"></i>
-          <i class="fas fa-heart coeur-plein"></i>
-        </li>
-      </div>
-    </ul>
-    <ul>
-      <div class="cadre-restau">
-        <a href="menu-charonne.html">
-        <li class="charonne">
-          <button class="bouton-restau"> Nouveau</button>
-        </li></a>
-        <li class="titre-restau"><a href="menu-charonne.html">La note enchantée</a></li>
-        <li class="menilmontant-lien"><a href="menu-charonne.html">Charonne</a></li>
-        <li class="icone"> 
-          <i class="far fa-heart coeur-creux"></i>
-          <i class="fas fa-heart coeur-plein"></i>
-        </li>
-      </div>
-    </ul>
-    <ul>
-      <div class="cadre-restau">
-        <a href="menu-citerouge.html">
-        <li class="citerouge"></li>
-        </a>
-        <li class="titre-restau"><a href="menu-citerouge.html">À la française</a></li>
-        <li class="menilmontant-lien"><a href="menu-citerouge.html">Cité rouge</a></li>
-        <li class="icone">
-          <i class="far fa-heart coeur-creux"></i>
-          <i class="fas fa-heart coeur-plein"></i>
+    <nav class="nav-index">
+      <h2>Fonctionnement</h2>
+      <ul>
+        <div class="titre-bouton">
+          <li class="number">1</li>
+          <li class="logo logo-portable">
+            <i class="fas fa-mobile-alt logo-icone"></i>
           </li>
-      </div>
-    </ul>
-    <ul>
-      <div class="cadre-restau">
-        <a href="menu-mericourt.html">
-        <li class="folie-mericourt"></li></a>
-        <li class="titre-restau"><a href="menu-mericourt.html">Le délice des sens</a> </li>
-        <li class="menilmontant-lien"><a href="menu-mericourt.html">Folie-méricourt</a></li>
-        <li class="icone"> 
-          <i class="fa fa-heart coeur-creux"></i>
-          <i class="fa fa-heart coeur-plein"></i>
-        </li>
-      </div>
-    </ul>
-  </main>
-  <footer class="footer">
-    <h1 class="title-footer">ohmyfood</h1>
-    <ul>
-      <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
-      <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-      <li>Mentions légales</li>
-      <li> <a class="email" href="mailto:adresse@serveur.com">Contact </a></li>
-    </ul>
-  </footer>
-  </div>
-</body>
-
+          <li class="choix-restaurant">
+            <p>Choississez un restaurant</p>
+          </li>
+        </div>
+        <div class="titre-bouton">
+          <li class="number grid">2</li>
+          <li class="logo logo-list"><i class="fas fa-list logo-icone"></i></li>
+          <li class="compo-menu">
+            <p>Composez votre menu</p>
+          </li>
+        </div>
+        <div class="titre-bouton">
+          <li class="number">3</li>
+          <li class="logo logo-store">
+            <i class="fas fa-store logo-icone"></i>
+          </li>
+          <li class="degust-restaurant">
+            <p>Dégustez au restaurant</p>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <main class="main">
+      <h2 id="restaurant">Restaurants</h2>
+      <ul>
+        <div class="cadre-restau">
+          <a href="menu-menilmontant.html">
+            <li class="bg-img menilmontant">
+              <button class="bouton-restau">Nouveau</button>
+            </li></a
+          >
+          <li class="titre-restau">
+            <a href="menu-menilmontant.html">La palette du goût</a>
+          </li>
+          <li class="menilmontant-lien">
+            <a href="menu-menilmontant.html">Menilmontant</a>
+          </li>
+          <li class="icone">
+            <i class="far fa-heart coeur-creux"></i>
+            <i class="fas fa-heart coeur-plein"></i>
+          </li>
+        </div>
+      </ul>
+      <ul>
+        <div class="cadre-restau">
+          <a href="menu-charonne.html">
+            <li class="bg-img charonne">
+              <button class="bouton-restau">Nouveau</button>
+            </li></a
+          >
+          <li class="titre-restau">
+            <a href="menu-charonne.html">La note enchantée</a>
+          </li>
+          <li class="menilmontant-lien">
+            <a href="menu-charonne.html">Charonne</a>
+          </li>
+          <li class="icone">
+            <i class="far fa-heart coeur-creux"></i>
+            <i class="fas fa-heart coeur-plein"></i>
+          </li>
+        </div>
+      </ul>
+      <ul>
+        <div class="cadre-restau">
+          <a href="menu-citerouge.html">
+            <li class="bg-img citerouge"></li>
+          </a>
+          <li class="titre-restau">
+            <a href="menu-citerouge.html">À la française</a>
+          </li>
+          <li class="menilmontant-lien">
+            <a href="menu-citerouge.html">Cité rouge</a>
+          </li>
+          <li class="icone">
+            <i class="far fa-heart coeur-creux"></i>
+            <i class="fas fa-heart coeur-plein"></i>
+          </li>
+        </div>
+      </ul>
+      <ul>
+        <div class="cadre-restau">
+          <a href="menu-mericourt.html">
+            <li class="bg-img folie-mericourt"></li
+          ></a>
+          <li class="titre-restau">
+            <a href="menu-mericourt.html">Le délice des sens</a>
+          </li>
+          <li class="menilmontant-lien">
+            <a href="menu-mericourt.html">Folie-méricourt</a>
+          </li>
+          <li class="icone">
+            <i class="far fa-heart coeur-creux"></i>
+            <i class="fas fa-heart coeur-plein"></i>
+          </li>
+        </div>
+      </ul>
+    </main>
+    <footer class="footer">
+      <h1 class="title-footer">ohmyfood</h1>
+      <ul>
+        <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
+        <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+        <li>Mentions légales</li>
+        <li><a class="email" href="mailto:adresse@serveur.com">Contact </a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
