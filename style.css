@@ -141,6 +141,7 @@
     border-radius: 71px;
     border: hidden;
     background: linear-gradient(#f780c9, #9356dc);
+    color:white;
     font-size: medium;
     margin-top: 10px;
   }
@@ -572,7 +573,7 @@
     width: 100%;
   }
   
-  .nav-index ul {
+  .nav-index > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -783,10 +784,16 @@
     box-shadow: 1px 1px 11px;
     margin-top: 35px;
     text-decoration: none;
+   
   }
   .cadre-restau a{
     text-decoration: none;
   }
+ .carte-restaurant{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ }
   .bouton-restau {
     margin-right: 19px;
     margin-top: 20px;
@@ -1010,6 +1017,7 @@
       background: linear-gradient(#f780c9, #9356dc);
       font-size: medium;
       margin-top: 10px;
+      color:white;
     }
     
     .bouton:hover {
@@ -1438,7 +1446,7 @@
       width: 100%;
     }
     
-    .nav-index ul {
+    .nav-index > div {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -1653,6 +1661,12 @@
       box-shadow: 1px 1px 11px;
       margin-top: 35px;
       text-decoration: none;
+      margin-right: 20px;
+    }
+    .carte-restaurant{
+      display: flex;
+    width: 106%;
+    margin-right:-17px;
     }
     .cadre-restau a{
       text-decoration: none;
@@ -1878,6 +1892,7 @@
     background: linear-gradient(#f780c9, #9356dc);
     font-size: medium;
     margin-top: 10px;
+    color:white;
   }
   
   .bouton:hover {
@@ -2318,12 +2333,11 @@
     width: 100%;
   }
   
-  .nav-index ul {
+  .nav-index > div {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
-  
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
@@ -2535,6 +2549,12 @@
     box-shadow: 1px 1px 11px;
     margin-top: 35px;
     text-decoration: none;
+   margin-left:20px;
+  }
+  .carte-restaurant{
+    display: flex;
+    width:106%;
+    margin-right:20px;
   }
   .cadre-restau a{
     text-decoration: none;
