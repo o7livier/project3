@@ -756,7 +756,7 @@
   .titre-restau {
     font-size: 19px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-left: 10px;
   }
   
@@ -1633,7 +1633,7 @@
     .titre-restau {
       font-size: 19px;
       font-weight: 600;
-      margin-top: 10px;
+      margin-top: 2px;
       margin-left: 10px;
     }
     
@@ -1656,7 +1656,7 @@
     .cadre-restau {
       height: 265px;
       background: white;
-      width: 100%;
+      width: 45%;
       border-radius: 25px;
       box-shadow: 1px 1px 11px;
       margin-top: 35px;
@@ -1665,8 +1665,9 @@
     }
     .carte-restaurant{
       display: flex;
-    width: 106%;
-    margin-right:-17px;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
     .cadre-restau a{
       text-decoration: none;
@@ -2521,7 +2522,7 @@
   .titre-restau {
     font-size: 19px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-left: 10px;
   }
   
