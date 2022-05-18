@@ -18,10 +18,7 @@
     background-color: rgb(243, 243, 243);
     opacity:0.9;
     height: 100vh;
-    animation: disappear 2s  1s;
-    animation-duration:2s linear;
-    animation-delay: 1s;
-  
+    animation: disappear 2s  1s linear;
     animation-fill-mode: forwards;
     transform-origin: center;
     }
@@ -449,8 +446,9 @@
     display: flex;
     justify-content: center;
   }
-  .bouton-commander p{
-    margin-top:17px
+  .bouton-commander a{
+    display: block;
+    margin-top:17px;
   }
   .icone-menilmontant{
     display: flex;
@@ -641,7 +639,7 @@
       background: -moz-linear-gradient(45deg,#f780c9, #9356dc);
       -webkit-background-clip: text;
       color: transparent;
-    background-clip: clip;
+  
     transition:all 500ms ease-in-out;
     transform: scale(1.1);
     cursor: pointer;
@@ -891,10 +889,7 @@
       background-color: rgb(243, 243, 243);
       opacity:0.9;
       height: 100vh;
-      animation: disappear 2s  1s;
-      animation-duration:5S linear;
-     animation-delay: 1s;
-    
+      animation: disappear 2s  1s linear;
       animation-fill-mode: forwards;
       transform-origin: center;
       }
@@ -1322,8 +1317,9 @@
       display: flex;
       justify-content: center;
     }
-    .bouton-commander p{
-      margin-top:17px
+    .bouton-commander a{
+      display: block;
+      margin-top:17px;
     }
     .icone-menilmontant{
       display: flex;
@@ -1495,7 +1491,7 @@
       background: -moz-linear-gradient(45deg,#f780c9, #9356dc);
       -webkit-background-clip: text;
       color: transparent;
-      background-clip: clip;
+
       transition:all 500ms ease-in-out;
       transform: scale(1.1);
       cursor: pointer;
@@ -1769,10 +1765,7 @@
     background-color: rgb(243, 243, 243);
     opacity:0.9;
     height: 100vh;
-    animation: disappear 2s  1s;
-    animation-duration:5S linear;
-   animation-delay: 1s;
-  
+    animation: disappear 2s  1s linear;
     animation-fill-mode: forwards;
     transform-origin: center;
     }
@@ -2210,8 +2203,9 @@
     display: flex;
     justify-content: center;
   }
-  .bouton-commander p{
-    margin-top:17px
+  .bouton-commander a{
+    display: block;
+    margin-top:17px;
   }
   .icone-menilmontant{
     display: flex;
@@ -2385,7 +2379,6 @@
     background: -moz-linear-gradient(45deg,#f780c9, #9356dc);
     -webkit-background-clip: text;
     color: transparent;
-    background-clip: clip;
     transition:all 500ms ease-in-out;
     transform: scale(1.1);
     cursor: pointer;
