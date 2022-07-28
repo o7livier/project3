@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -8,20 +8,21 @@
     margin:0 auto;
     position:relative;
   }
-  
+   /*disparait */
   .loader{
-    display:grid;
-    place-items: center;
+  display:grid;
+   place-items: center;
    position: fixed;
    z-index: 0;
    inset:0 ;
-    background-color: rgb(243, 243, 243);
+   background-color: rgb(243, 243, 243);
     opacity:0.9;
     height: 100vh;
     animation: disappear 2s  1s linear;
     animation-fill-mode: forwards;
     transform-origin: center;
     }
+    /* le cercle*/
   .cercle {
     font-size:20px;
     height: 100px;
@@ -597,12 +598,14 @@
     position: absolute;
     transition:all 0.2s ease-in-out;
   }
+  /*explique le coeur de la page 2*/
   .coeur2 {
     display: flex;
     align-items: center;
     padding-right:2rem;
     font-size: 2rem;
   }
+  /* explique le coeur DE LAPAGE 2*/
   .coeur2::after {
     content: "";
     font-family: "Font Awesome 5 Free";
@@ -618,6 +621,7 @@
     -webkit-background-clip: text;
     background-clip: text;
   }
+  /*COEUR DE LA PAGE 1*/
   .coeur-creux{
     z-index:0;
     opacity: 1;
@@ -869,7 +873,7 @@
     text-decoration: none;
   }
   }
-  @media screen and (min-width:768px)and (max-width:992px) {
+@media all and (min-width:768px)and (max-width:991px) {
     body {
       font-family: 'Roboto', sans-serif;
       box-sizing: border-box;
@@ -2044,13 +2048,14 @@
     line-height: 1.6em;
     font-size: 1.1em;
   }
+  animation affichage  menu avec decalage 
   .menu-details{
     display:flex ;
     flex-wrap: wrap;
     margin-left:20px;
     margin-right:20px;
     justify-content: space-between;
-    -webkit-animation: animEntrePlats 1s ease-in-out 1000ms forwards;
+    -webkit-animation: animEntrePlats 1s ease-in-out 1000ms forwards; 
     animation: animEntrePlats 1s ease-in-out 1000ms forwards;
   }
   .menu-details-plats{
@@ -2071,7 +2076,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation:afficheBtn 0.5s forwards;
+    animation:afficheBtn 0.5s forwards ease-in-out;
     background-color:#99E2D0;
   }
   @keyframes afficheBtn{
