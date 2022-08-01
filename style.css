@@ -8,7 +8,7 @@
     margin:0 auto;
     position:relative;
   }
-   /*disparait */
+   /*loader en lui meme*/
   .loader{
   display:grid;
    place-items: center;
@@ -22,7 +22,7 @@
     animation-fill-mode: forwards;
     transform-origin: center;
     }
-    /* le cercle*/
+    /* le cercle */
   .cercle {
     font-size:20px;
     height: 100px;
@@ -34,7 +34,7 @@
    animation: spin 1s infinite ease-in-out;  
    }
   
-  
+  /*animation du loader*/
   @keyframes disappear {
     0% { 
       transform: scale(1);
@@ -43,6 +43,7 @@
        transform:scale(0);
        }
   }
+  /* animation de la rotation du cercle*/
   @keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -52,7 +53,7 @@
     }
   }
   
-  
+  /* animation apparition des plats*/
   @keyframes animEntrePlats {
     from {
       transform: translateY(20px);
@@ -232,7 +233,6 @@
     font-size: 18px;
     padding-top: 0;
     margin-top: 40px;
-  
     opacity: 0.02;
     -webkit-animation: animEntrePlats 1s ease-in-out 1000ms forwards;
     animation: animEntrePlats 1s ease-in-out 1000ms forwards;
@@ -318,6 +318,7 @@
     animation:afficheBtn 0.5s forwards;
     background-color:#99E2D0;
   }
+/*bouton de validation de plats*/
   @keyframes afficheBtn{
     10%{
       width:10px;
@@ -799,11 +800,12 @@
   .bouton-restau {
     margin-right: 19px;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 19px;
+    padding-top:8px;
     border-radius: 4px 3px;
     text-align: center;
-    width: 80px;
-    height: 30px;
+    width: 96px;
+    height: 31px;
     color: green;
     background-color: #99E2D0;
     border: none;
@@ -1673,16 +1675,18 @@
       text-decoration: none;
     }
     .bouton-restau {
-      margin-right: 19px;
-      margin-top: 20px;
-      font-size: 14px;
-      border-radius: 4px 3px;
-      text-align: center;
-      width: 80px;
-      height: 30px;
-      color: green;
-      background-color: #99E2D0;
-      border: none;
+   
+        margin-right: 19px;
+        margin-top: 20px;
+        font-size: 19px;
+        padding-top:8px;
+        border-radius: 4px 3px;
+        text-align: center;
+        width: 96px;
+        height: 31px;
+        color: green;
+        background-color: #99E2D0;
+        border: none;
       
     }
     
@@ -2027,6 +2031,7 @@
   .btn .fas{
     color: rgb(247, 247, 247);
   }
+  /*affiche la petite virgule a l interieur du bouton vert*/
   .border:hover .btn .fas { 
     animation:rotation 1s linear;
   
@@ -2048,7 +2053,7 @@
     line-height: 1.6em;
     font-size: 1.1em;
   }
-  animation affichage  menu avec decalage 
+  /*animation affichage  menu avec decalage */
   .menu-details{
     display:flex ;
     flex-wrap: wrap;
@@ -2071,7 +2076,7 @@
     align-items: center;
     display: none;
   }
-  
+  /*affiche une bordure verte qui se rectracte*/
   .border:hover .btn{
     display: flex;
     align-items: center;
@@ -2561,11 +2566,12 @@
   .bouton-restau {
     margin-right: 19px;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 19px;
+    padding-top:8px;
     border-radius: 4px 3px;
     text-align: center;
-    width: 80px;
-    height: 30px;
+    width: 96px;
+    height: 31px;
     color: green;
     background-color: #99E2D0;
     border: none;
